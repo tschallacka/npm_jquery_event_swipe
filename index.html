@@ -1,22 +1,39 @@
 <html>
 	<head>
+		<meta name="viewport" content="width=device-width">
 		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet" href="demo/css/style.css">
 	</head>
 	<body>
 		<section class="container">
 			<div class="row header">
-				<div class="col-6">
+				<div class="col-12 col-sm-6">
 					<a href="index.html">DOCUMENTATION</a>
 				</div>
-				<div class="col-6">
+				<div class="col-12 col-sm-6">
 					<a href="demo/test_basic.html">DEMO</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
 					<h2 id="jqueryeventswipe">jQuery Event Swipe</h2>
-					<p>A simple jQuery event swipe library. When a swipe happens an event will be triggered.</p>
+					<p>
+						Visit the <a href="https://github.com/tschallacka/npm_jquery_event_swipe">github page</a>.
+					</p>
+					<p>
+						A simple jQuery event swipe library. When a swipe happens an event will be triggered.<BR/>
+						I needed a simple method to figure out if a swipe had happened or not and none of the libraries currently available gave 
+						me a an easy to manage drop in method. So I made my own.
+					</p>
+					<p>
+						This library is focussed on pure node project integration that will be compiled with something into a single JS file that's served to the browser, 
+						and will not run as a stand alone, in a non node enviroment, unless you modify the source a bit.<BR/>
+						The events will attach themselves to whichever jQuery instance is returned by <code>require('jquery');</code> 
+					</p>
+					<i>Yes, this page looks awful. But honestly I just churned this out so there's something to fiddle with on the demo page.
+					I might revisit this to "beautify" or leave it as is. Depends how popular the library gets. Make an issue
+					or submit a pull request if you really can't stand it.</i>
+					</p>
 				</div>
 				<div class="col-12">
 					<p>There are four events.</p>
@@ -130,6 +147,33 @@ $swipefield.on('touchend', (e) => {
 	swipeSettingsManager({
 		allowedTime: 100
 	});	</code></pre>
+				</div>
+			</div>
+			<footer class=" site-footer profile">
+				<div class="profile row">
+					<div class="col-3">
+						<a class="circle-image-link" href="https://www.tschallacka.de" title="Tschallacka's website">
+						  <img src="demo/img/tschallacka.png">
+						</a>
+					</div>
+					<div class="info col-9">
+					  <h2 class="title">jQuery swipe events by Tschallacka</h2>
+					  <a href="https://twitter.com/tschallacka" class="twitter-follow-button" data-show-count="false" data-size="large" data-show-screen-name="false" data-dnt="true">Follow @tschallacka</a>
+					  <p>
+						I needed a reliable way to detect swipe events on elements so they could hide when swiped.
+						No library currently provided me the easy drop in method I needed, so here it is.
+					  </p>
+					  <p>
+						I'm a coder for fun, who happened to have found a job within his hobby. 
+						I don't claim to be good, but I do claim not to be trash at coding. However, if you find trash within my code, 
+						which can happen because stuff goes out of date and gets replaced with newer knowledge, gimme a ping, and i'll
+						do my best to resolve it.
+					  </p>
+					  <a href="https://www.tschallacka.de">website</a> | <a href="https://www.github.com/tschallacka">github</a> | <a href="https://www.twitter.com/tschallacka">twitter</a> | <a href="https://stackoverflow.com/users/1356107/tschallacka">stackoverflow</a> | <a href="https://www.reddit.com/user/tschallacka">reddit</a> 
+					</div>
+				  </div>
+			</footer>
+		</section>
 	</body>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
 </html>

@@ -1,6 +1,15 @@
 ## jQuery Event Swipe
 
-A simple jQuery event swipe library. When a swipe happens an event will be triggered.
+A simple jQuery event swipe library. When a swipe happens an event will be triggered.  
+I needed a simple method to figure out if a swipe had happened or not and none of the libraries currently available gave 
+me a an easy to manage drop in method. So I made my own.
+
+This library is focussed on pure node project integration that will be compiled with something into a single JS file that's served to the browser, 
+and will not run as a stand alone, in a non node enviroment, unless you modify the source a bit.
+The events will attach themselves to whichever jQuery instance is returned by `require('jquery');` 
+
+
+Read the documentation and play with the demo on https://tschallacka.github.io/npm_jquery_event_swipe/
 
 There are four events.
 
