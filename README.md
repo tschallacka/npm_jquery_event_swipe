@@ -52,7 +52,7 @@ There are several tricks you can apply, but they vary by use case.
 One trick you might consider using is setting the overflow-y property on the document when the touchstart happens within a wrapping element
 
 ```javascript
-let $swipefield = $('.swipefield);
+let $swipefield = $('.swipefield');
     $body = $('body');
 	
 $swipefield.on('touchstart', (e) => {
