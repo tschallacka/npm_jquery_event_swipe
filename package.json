@@ -1,6 +1,6 @@
 {
   "name": "swipe_event_jquery",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Adds jQuery events when a swipe has occurred.",
   "main": "index.js",
   "scripts": {
