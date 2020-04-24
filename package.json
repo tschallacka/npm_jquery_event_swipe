@@ -1,6 +1,6 @@
 {
   "name": "swipe_event_jquery",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Adds jQuery events when a swipe has occurred.",
   "main": "index.js",
   "scripts": {
@@ -22,9 +22,9 @@
   "bugs": {
     "url": "https://github.com/tschallacka/npm_jquery_event_swipe/issues"
   },
-  "homepage": "https://github.com/tschallacka/npm_jquery_event_swipe#readme",
+  "homepage": "https://tschallacka.github.io/npm_jquery_event_swipe/index.html",
   "dependencies": {
-    "jquery": "^3.5.0"
+    "jquery": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
